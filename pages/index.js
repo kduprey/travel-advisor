@@ -1,15 +1,24 @@
 import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import List from "./components/List";
+import Map from "./components/Map";
 
 const Home = () => {
 	return (
-		<div className="flex flex-col items-center justify-center min-h-screen py-2">
+		<div className="">
 			{/* Header */}
 			<Header title="Next.js Tailwind Template" />
 
-			<main>
-				<h1 className="text-6xl font-bold">
-					Hello, this is a Next Tailwind Template! :)
-				</h1>
+			<main className="">
+				<Navbar />
+				<div className="flex justify-between md:flex-row flex-col">
+					<div className="w-3/4 order-2 md:order-none">
+						<List />
+					</div>
+					<div className="w-full md:w-[500px] md:h-[500px] lg:h-[600px] lg:w-[800px] container order-1 md:order-none">
+						<Map />
+					</div>
+				</div>
 			</main>
 		</div>
 	);
