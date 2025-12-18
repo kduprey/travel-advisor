@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.20.8",
-    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.19",
     "axios": "^1.13.2",
     "google-map-react": "^2.2.5",
